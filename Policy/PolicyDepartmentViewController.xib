@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PolicyDepartmentViewController">
+            <connections>
+                <outlet property="backgroundView" destination="p6e-uK-tpU" id="bLG-WL-Hah"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-0r-cfs" customClass="CustomNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="政策文件/文号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjC-u3-8Iz">
+                            <rect key="frame" x="87" y="32" width="200" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9Zg-Ga-rb8"/>
+                                <constraint firstAttribute="width" constant="200" id="QVi-Iy-Pr3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGJ-WI-VJd">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="4fo-aB-DvF"/>
+                                <constraint firstAttribute="width" constant="44" id="bsN-JJ-bav"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-13" maxY="0.0"/>
+                            <state key="normal" image="形状1拷贝6">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Pbu-rg-28h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hGJ-WI-VJd" secondAttribute="bottom" id="2NV-2o-5df"/>
+                        <constraint firstAttribute="height" constant="64" id="YdV-jm-hPP"/>
+                        <constraint firstItem="hGJ-WI-VJd" firstAttribute="leading" secondItem="tYy-0r-cfs" secondAttribute="leading" id="ogx-7K-MW7"/>
+                        <constraint firstItem="YjC-u3-8Iz" firstAttribute="centerX" secondItem="tYy-0r-cfs" secondAttribute="centerX" id="qZY-2r-W0Y"/>
+                        <constraint firstItem="YjC-u3-8Iz" firstAttribute="centerY" secondItem="hGJ-WI-VJd" secondAttribute="centerY" id="zY1-9M-COd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-uK-tpU">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="发布部门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuB-bi-suo">
+                            <rect key="frame" x="10" y="20" width="100" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p6e-uK-tpU" firstAttribute="top" secondItem="tYy-0r-cfs" secondAttribute="bottom" id="0oE-8n-E8O"/>
+                <constraint firstItem="tYy-0r-cfs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BEr-VF-q7g"/>
+                <constraint firstItem="tYy-0r-cfs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BIO-vl-p57"/>
+                <constraint firstAttribute="trailing" secondItem="tYy-0r-cfs" secondAttribute="trailing" id="Bcx-sx-40z"/>
+                <constraint firstItem="p6e-uK-tpU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="C7M-O8-tXi"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="p6e-uK-tpU" secondAttribute="bottom" id="Kip-Rh-Gpt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="p6e-uK-tpU" secondAttribute="trailing" id="h0L-aR-4va"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-196" y="24"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="形状1拷贝6" width="13" height="24"/>
+    </resources>
+</document>
